@@ -1,0 +1,115 @@
+@tree-view-height: @ui-line-height;
+
+.tool-panel.tree-view {
+  padding: 8em 0;
+  transform: perspective(12in) rotateY(12deg) scale(1.2);
+  transform-origin: left;
+  box-shadow: inset 0 0 100px rgba(0,0,255,0.5);
+  background-image:
+    url(atom://cityscape-ui/assets/skyscraper-magenta.png);
+  background-repeat: repeat;
+  background-size: 1080px;
+  background-position: bottom 0px right 212px;
+}
+
+.tree-view {
+  * {
+    filter: brightness(1.1);
+    color: @accent-bg-color;
+  }
+  font-size: @ui-size;
+
+  li span {
+    box-shadow:
+      inset 0 0 4em black,
+      0 0 1em black;
+    border-radius: 2px;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  li span::after {
+    content: "░▒▓█▓▒░..";
+    display: block;
+    font-size: 0.25em;
+    line-height: 0;
+  }
+
+  li span:hover::after {
+    content: "░▒▓█▓▒░▒▓███▓▒░▒▓▓█▓░▓███▓▒░▒▓▓▒▒▓██▓▒▒░░▒▓▒▒▒███▓▓▒▒░░..";
+  }
+
+  .project-root.project-root {
+    &:before {
+      height: @ui-tab-height;
+      background-clip: padding-box;
+    }
+    & > .header .name {
+      line-height: @ui-tab-height;
+    }
+  }
+
+  // Selected state
+  .selected:before {
+    background: transparent;//@background-color-selected;
+  }
+
+  // Focus + selected state
+  &:focus {
+    .selected.list-item > .name, // files
+    .selected.list-nested-item > .list-item > .name, // folders
+    .selected.list-nested-item > .header:before { // arrow icon
+      color: contrast(@button-background-color-selected);
+    }
+    .selected:before {
+      background: transparent;//@button-background-color-selected;
+    }
+  }
+}
+
+.tree-view-resizer {
+  .tree-view-resize-handle {
+    width: 8px;
+  }
+}
+
+// Variable height, based on ems
+.list-group li:not(.list-nested-item),
+.list-tree li:not(.list-nested-item),
+.list-group li.list-nested-item > .list-item,
+.list-tree li.list-nested-item > .list-item {
+  line-height: @tree-view-height;
+}
+
+.list-group .selected::before,
+.list-tree .selected::before {
+  height: @tree-view-height;
+}
+
+// icon
+.list-group .icon,
+.list-tree .icon {
+  display: inline-block;
+  height: inherit;
+  &::before {
+    top: initial;
+    line-height: inherit;
+    height: inherit;
+    vertical-align: top;
+  }
+}
+
+// Arrow icon
+.list-group,
+.list-tree {
+  .header.header.header.header::before {
+    top: initial;
+    line-height: inherit;
+    height: inherit;
+    vertical-align: top;
+    font-size: inherit;
+  }
+}
+.tree-view .project-root-header.project-root-header.project-root-header.project-root-header::before {
+  line-height: @ui-tab-height;
+}
