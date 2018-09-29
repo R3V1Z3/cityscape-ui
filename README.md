@@ -4,6 +4,12 @@ From your lofty suite overlooking the bustling lights of the city, humbled only 
 
 Cityscape UI paves the way. It overhauls many of Atom's UI elements and helps you focus on what really matters; itself.
 
+## Credits
+
+* Atom One Dark UI Team
+* Ugotsta
+* Perspective code for tree-view and minimap
+
 FEATURES
 
 * Probably the most distracting UI theme for Atom.

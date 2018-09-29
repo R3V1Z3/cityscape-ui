@@ -7,7 +7,10 @@
 .btn-default (@color, @hover-color, @selected-color, @text-color) {
   color: @text-color;
   text-shadow: none;
-  border: @btn-border;
+  border: none;//@btn-border;
+  box-shadow:
+    0 0 8px @accent-color,
+    inset 0 0 70px @accent-color;
   background-color: @color;
   background-image: linear-gradient(lighten(@color, 2%), @color);
 

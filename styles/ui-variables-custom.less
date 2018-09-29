@@ -1,7 +1,4 @@
-
-// ONE light UI variables
-// ----------------------------------------------
-
+// Custom variables
 @import "syntax-variables";
 
 .ui-syntax-color() { @syntax-background-color: hsl(220,1%,98%); } .ui-syntax-color(); // fallback color
@@ -25,7 +22,7 @@
 // These variables are only used in this theme
 // ----------------------------------------------
 
-@ui-theme-name: one-light-ui;
+@ui-theme-name: cityscape-ui;
 
 // Text (Custom) -----------------
 @text-color-faded: fade(@text-color, 30%);
@@ -66,7 +63,7 @@
 
 @checkbox-background-color:         fade(@accent-bg-color, 33%);
 
-@input-background-color-focus:      hsl(@ui-hue, 100%, 96%);
+@input-background-color-focus:      rgba(255,255,255,0.15);//hsl(@ui-hue, 100%, 96%);
 @input-selection-color:             mix( hsv( @ui-hue, 33%, 95%), hsl( @ui-hue, 100%, 98%), @accent-luma * 2 ); // mix hsv + hsl (favor hsl for dark, hsv for light colors)
 @input-selection-color-focus:       mix( hsv( @ui-hue, 44%, 90%), hsl( @ui-hue, 100%, 94%), @accent-luma * 2 ); // mix hsv + hsl (favor hsl for dark, hsv for light colors)
 
@@ -110,7 +107,6 @@
 @theme-config-box-shadow: inset 0 1px 2px hsla(0, 0%, 0%, .2), 0 1px 0 hsla(0, 0%, 100%, .3);
 @theme-config-box-shadow-selected: inset 0 1px 3px hsla(0, 0%, 0%, .2);
 @theme-config-border-selected: hsla(0, 0%, 0%, .5);
-
 
 // Debug
 // Output variables to the top of the UI

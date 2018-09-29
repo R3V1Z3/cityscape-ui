@@ -31,21 +31,27 @@ atom-workspace::after {
 	mix-blend-mode: soft-light;
 }
 
+atom-workspace[class*="-light"] .tool-panel.panel-footer::after {
+	mix-blend-mode: color-dodge;
+	opacity: 1;
+}
+
 // foreground cityscape
 .tool-panel.panel-footer::after {
-  // content:"";
-  // position: absolute;
-  // z-index: 0;
-  // pointer-events: none;
-  // left: 0;
-  // bottom: 0;
-  // right: 0;
-  // top: -260px;
-  // transform: scale(2.15);
-  // background: url(atom://cityscape-ui/assets/cityscape-front.png);
-  // background-repeat: no-repeat;
-  // background-position: 58% 0%;
-  // filter: saturate(1) contrast(2) brightness(0.8) blur(2px);
+  content:"";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: -260px;
+  transform: scale(2.7);
+  background: url(atom://cityscape-ui/assets/cityscape-front.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  filter: saturate(1) contrast(2) brightness(0.8) blur(4px);
+	opacity: 0.75;
 }
 
 // background cityscape

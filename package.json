@@ -4,9 +4,12 @@
   "version": "1.12.5",
   "description": "Atom One light UI theme",
   "keywords": [
-    "light",
-    "adaptive",
-    "ui"
+    "ui",
+    "dark",
+    "neon",
+    "city",
+    "night",
+    "perspective"
   ],
   "license": "MIT",
   "repository": "https://github.com/Ugotsta/neon-ui",

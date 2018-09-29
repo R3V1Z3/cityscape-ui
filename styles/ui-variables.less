@@ -1,12 +1,10 @@
-@import "ui-variables-custom.less"; // import colors and custom variables
+// import colors and custom variables
+@import "ui-variables-custom.less";
 
 // Official variables
-// These variables must be defined in every theme
-// Source: https://github.com/atom/atom/blob/master/static/variables/ui-variables.less
-// ----------------------------------------------
 
 // Text -----------------
-@text-color:            @ui-fg;
+@text-color:            @ui-bg;
 @text-color-subtle:     lighten(@text-color, 30%);
 @text-color-highlight:  darken(@text-color, 12%);
 @text-color-selected:   darken(@text-color-highlight, 12%);
@@ -35,7 +33,7 @@
 @pane-item-background-color:       @base-background-color;
 @pane-item-border-color:           @base-border-color;
 
-@input-background-color:           @level-1-color;
+@input-background-color:           rgba(0,0,0,0.75);//@level-1-color;
 @input-border-color:               @base-border-color;
 
 @tool-panel-background-color:      @level-3-color;
@@ -70,7 +68,6 @@
 @ui-site-color-4: #D831B0;             // pink
 @ui-site-color-5: #EBDD5B;             // yellow
 
-
 // Sizes -----------------
 @font-size:               12px;
 @input-font-size:         14px;
@@ -83,7 +80,6 @@
 @component-border-radius: 3px;
 
 @tab-height:              40px;
-
 
 // Font -----------------
 @font-family: OpenDyslexicMono, system-ui;
