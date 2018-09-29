@@ -4,25 +4,35 @@
   padding: 8em 0;
   transform: perspective(12in) rotateY(12deg) scale(1.2);
   transform-origin: left;
-  box-shadow: inset 0 0 100px rgba(0,0,255,0.5);
+  box-shadow:
+    inset 0 0 150px black,
+    inset 0 0 100px rgba(0,0,255,0.5);
   background-image:
-    url(atom://cityscape-ui/assets/skyscraper-magenta.png);
+    linear-gradient(0deg,
+    fade(@accent-color, 50%) 25%,
+    rgba(0,0,0,0.5) 25%,
+    rgba(0,0,0,0.5) 50%,
+    fade(@accent-color, 50%) 50%,
+    fade(@accent-color, 50%) 75%,
+    rgba(0,0,0,0.5) 75%,
+    rgba(0,0,0,0.5) 100%
+  ),url(atom://cityscape-ui/assets/skyscraper-magenta.png);
+  background-size: 3px, 720px;
   background-repeat: repeat;
-  background-size: 1080px;
   background-position: bottom 0px right 212px;
 }
 
 .tree-view {
   * {
-    filter: brightness(1.1);
+    filter: brightness(1.2) contrast(1.1);
     color: @accent-bg-color;
+    text-shadow:
+      0 0 2px currentColor,
+      0 0 8px currentColor;
   }
   font-size: @ui-size;
 
   li span {
-    box-shadow:
-      inset 0 0 4em black,
-      0 0 1em black;
     border-radius: 2px;
     padding-right: 1em;
     padding-left: 1em;

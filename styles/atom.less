@@ -18,6 +18,7 @@ atom-workspace {
 	background-color: @ui-fg;//@app-background-color;
 }
 
+// magenta overlay
 atom-workspace::after {
   content: "";
   pointer-events: none;
@@ -31,12 +32,7 @@ atom-workspace::after {
 	mix-blend-mode: soft-light;
 }
 
-atom-workspace[class*="-light"] .tool-panel.panel-footer::after {
-	mix-blend-mode: color-dodge;
-	opacity: 1;
-}
-
-// foreground cityscape
+// foreground cityscape overlay
 .tool-panel.panel-footer::after {
   content:"";
   position: absolute;
@@ -54,7 +50,13 @@ atom-workspace[class*="-light"] .tool-panel.panel-footer::after {
 	opacity: 0.75;
 }
 
-// background cityscape
+// special overlay adjustment for light themes
+atom-workspace[class*="-light"] .tool-panel.panel-footer::after {
+	mix-blend-mode: color-dodge;
+	opacity: 1;
+}
+
+// background cityscape overlay
 .tool-panel.panel-footer::before {
   content:"";
   position: absolute;
