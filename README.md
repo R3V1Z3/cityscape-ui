@@ -15,6 +15,9 @@ It could happen. Cityscape UI aims to see it happen. It overhauls many of Atom's
 > Find/replace with Solarized Light Syntax. Light themes are supported through a [class*="-light"] CSS selector.
 ![Find with Solarized Light](screenshots/cityscape-ui-solarized-find.png)
 
+> Markdown preview using Solarized Light Syntax.
+![Markdown preview with Solarized Light](screenshots/cityscape-ui-markdown.png)
+
 > Font used in screenshots is [OpenDyslexic](https://www.opendyslexic.org/).
 
 ## Credits
