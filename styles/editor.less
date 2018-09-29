@@ -29,6 +29,20 @@ atom-text-editor-minimap {
   opacity: 0.6;
 }
 
+// cursor styling
+atom-text-editor.editor .cursors {
+  .cursor {
+    border: none;
+  }
+  .cursor::after {
+    content: "▎";
+    color: currentColor;//currentColor;
+    text-shadow:
+      0 0 2px currentColor,
+      0 0 8px currentColor;
+  }
+}
+
 // TODO: Find a better selector, maybe a new class like atom-text-editor[medium]
 atom-panel-container atom-text-editor.is-focused {
   .focus();
