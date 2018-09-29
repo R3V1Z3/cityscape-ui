@@ -1,8 +1,8 @@
 {
   "name": "cityscape-ui",
   "theme": "ui",
-  "version": "1.12.5",
-  "description": "Atom One light UI theme",
+  "version": "0.0.1",
+  "description": "Cityscape UI theme for Atom",
   "keywords": [
     "ui",
     "dark",
@@ -13,7 +13,7 @@
     "magenta"
   ],
   "license": "MIT",
-  "repository": "https://github.com/Ugotsta/neon-ui",
+  "repository": "https://github.com/Ugotsta/cityscape-ui",
   "main": "lib/main",
   "engines": {
     "atom": ">0.40.0"

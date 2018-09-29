@@ -6,8 +6,16 @@ It could happen. Cityscape UI aims to see it happen. It overhauls many of Atom's
 
 ## Neon lights
 
-> CSS with [Monokai Neon Syntax](https://atom.io/themes/monokai-neon-syntax).
+> CSS with [Monokai Neon Syntax](https://atom.io/themes/monokai-neon-syntax). File list rendered on adjacent skyscraper.
 ![CSS with Monokai Neon Syntax](screenshots/cityscape-ui-main.png)
+
+> Git Commit with [City Lights Syntax](https://atom.io/themes/city-lights-syntax).
+![Git Commit with City Lights](screenshots/cityscape-ui-city-lights-commit.png)
+
+> Find/replace with Solarized Light Syntax. Light themes are supported through a [class*="-light"] CSS selector.
+![Find with Solarized Light](screenshots/cityscape-ui-solarized-find.png)
+
+> Font used in screenshots is [OpenDyslexic](https://www.opendyslexic.org/).
 
 ## Credits
 
@@ -18,7 +26,7 @@ It could happen. Cityscape UI aims to see it happen. It overhauls many of Atom's
 FEATURES
 
 * Probably the most distracting UI theme for Atom.
-* Works great with neon syntax themes like [Monokai Neon Syntax](https://atom.io/themes/monokai-neon-syntax).
+* Works great with neon syntax themes like [Futurism Dark Syntax](https://atom.io/packages/futurism-dark-syntax).
 
 KNOWN BUGS
 

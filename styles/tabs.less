@@ -208,14 +208,12 @@ ul.tab-bar {
   }
 }
 
-
 // Active pane marker --------------
 
 // hide marker in docks
 atom-dock .tab-bar .tab::before {
   display: none;
 }
-
 
 // Custom tabs --------------
 
@@ -226,6 +224,7 @@ atom-dock .tab-bar .tab::before {
   &[data-type$="StyleguideView"],
   &[data-type="MarkdownPreviewView"] {
     color: @tab-text-color-editor;
-    background-color: @tab-background-color-editor; // Match syntax background color
+    background-color: @tab-background-color-active;//@tab-background-color-editor; // Match syntax background color
+    text-transform: uppercase;
   }
 }
