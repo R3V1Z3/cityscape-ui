@@ -9,15 +9,10 @@
     inset 0 0 100px rgba(0,0,255,0.5);
   background-image:
     linear-gradient(0deg,
-    fade(@accent-color, 50%) 25%,
-    rgba(0,0,0,0.5) 25%,
-    rgba(0,0,0,0.5) 50%,
-    fade(@accent-color, 50%) 50%,
-    fade(@accent-color, 50%) 75%,
-    rgba(0,0,0,0.5) 75%,
-    rgba(0,0,0,0.5) 100%
+    fade(@accent-color, 50%) 1px,
+    rgba(0,0,0,0.5) 2px
   ),url(atom://cityscape-ui/assets/skyscraper-magenta.png);
-  background-size: 3px, 720px;
+  background-size: 2px, 720px;
   background-repeat: repeat;
   background-position: bottom 0px right 212px;
 }
@@ -45,10 +40,6 @@
     line-height: 0;
   }
 
-  li span:hover::after {
-    content: "░▒▓█▓▒░▒▓███▓▒░▒▓▓█▓░▓███▓▒░▒▓▓▒▒▓██▓▒▒░░▒▓▒▒▒███▓▓▒▒░░..";
-  }
-
   .project-root.project-root {
     &:before {
       height: @ui-tab-height;
@@ -61,7 +52,9 @@
 
   // Selected state
   .selected:before {
-    background: transparent;//@background-color-selected;
+    content: "░▒▓█▓▒░▒▓███▓▒░▒▓▓█▓░▓███▓▒░▒▓▓▒▒▓██▓▒▒░░▒▓▒▒▒███▓▓▒▒░░..";
+    opacity: 0.35;
+    display: block;
   }
 
   // Focus + selected state
@@ -69,10 +62,12 @@
     .selected.list-item > .name, // files
     .selected.list-nested-item > .list-item > .name, // folders
     .selected.list-nested-item > .header:before { // arrow icon
-      color: contrast(@button-background-color-selected);
+      color: @button-background-color-selected;
     }
     .selected:before {
-      background: transparent;//@button-background-color-selected;
+      content: "░▒▓█▓▒░▒▓███▓▒░▒▓▓█▓░▓███▓▒░▒▓▓▒▒▓██▓▒▒░░▒▓▒▒▒███▓▓▒▒░░..";
+      opacity: 0.35;
+      display: block;
     }
   }
 }
