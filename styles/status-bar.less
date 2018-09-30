@@ -5,22 +5,20 @@
   opacity: 1;
   background: black;
 }
-
 status-bar {
   z-index: 3;
   padding-bottom: 30px;
-  font-size: 130%;
+  font-size: 100%;
   transform:
     perspective(12in)
     rotateX(30deg)
     rotateY(1deg)
-    translateX(-0em)
-    translateY(-1.5em)
-    scale(1.05);
+    translateX(0em)
+    translateY(-0em)
+    scale(1.1);
   transform-origin: bottom;
   height: @status-bar-height;
   line-height: @status-bar-height;
-  width: 100%;
   background: linear-gradient(to bottom, @accent-color 0%, black 10%);
 
   .flexbox-repaint-hack {
@@ -72,10 +70,11 @@ status-bar {
   }
 }
 
-
 // Package overrides -------------------------------
 
 .status-bar.status-bar {
+  margin-left: 50px;
+  margin-right: 55px;
 
   // Read-only -> Remove hover effect
   .is-read-only, // <- use this class in packages
