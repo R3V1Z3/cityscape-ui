@@ -1,7 +1,7 @@
 {
   "name": "cityscape-ui",
   "theme": "ui",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "The busy, neon cityscape for Atom",
   "keywords": [
     "ui",
