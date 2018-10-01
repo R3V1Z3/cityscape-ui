@@ -14,13 +14,13 @@ atom-overlay {
 
 atom-workspace[class*="-light"] atom-text-editor {
 	filter: none;
-  //mix-blend-mode: difference;
   opacity: 0.7;
 }
 
 atom-text-editor-minimap {
   transform: perspective(12in) rotateY(-12deg);
   transform-origin: right;
+
   .minimap-visible-area {
     box-shadow:
       inset 0 0 20px @ui-bg,
@@ -29,12 +29,16 @@ atom-text-editor-minimap {
     opacity: 0.5;
     transition: opacity 0.6s ease;
   }
+  // minimap hover
+  .minimap-visible-area:hover {
+    opacity: 0.6;
+  }
+
 }
 
-// minimap hover
-.minimap-visible-area:hover {
-  opacity: 0.6;
-}
+atom-workspace[class*="-light"] .minimap-visible-area {
+    filter: invert();
+  }
 
 // cursor styling
 atom-text-editor.editor .cursors {

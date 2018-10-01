@@ -4,7 +4,7 @@ From your lofty suite overlooking the bustling lights of the city, you take to d
 
 It could happen. Cityscape UI aims to see it happen. It overhauls many of Atom's UI elements and helps you focus on what really matters; itself. It wants your attention on its neon city lights.
 
-## Neon lights
+## Pretty Neon Lights
 
 > CSS with [Monokai Neon Syntax](https://atom.io/themes/monokai-neon-syntax). File list rendered on adjacent skyscraper.
 ![CSS with Monokai Neon Syntax](screenshots/cityscape-ui-main.png)
@@ -18,13 +18,13 @@ It could happen. Cityscape UI aims to see it happen. It overhauls many of Atom's
 > Markdown preview using Solarized Light Syntax.
 ![Markdown preview with Solarized Light](screenshots/cityscape-ui-markdown.png)
 
-> Font used in screenshots is [OpenDyslexic](https://www.opendyslexic.org/).
+> Font used in screenshots is [OpenDyslexicMono](https://www.opendyslexic.org/).
 
 ## Credits
 
 * [@Atom One Dark UI Team](https://github.com/atom/one-dark-ui) - core UI design
 * [@Ugotsta](https://github.com/Ugotsta) - design concepts and ugly code
-* [@dtinth](https://medium.com/hacking-atom/some-subtle-3d-effects-for-atom-d7a624a74fdd) - Perspective code for tree-view and minimap
+* [@dtinth](https://medium.com/hacking-atom/some-subtle-3d-effects-for-atom-d7a624a74fdd) - perspective code for tree-view and minimap
 
 FEATURES
 
