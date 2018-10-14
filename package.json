@@ -1,7 +1,7 @@
 {
   "name": "cityscape-ui",
   "theme": "ui",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The busy, neon cityscape for Atom",
   "keywords": [
     "ui",
@@ -65,7 +65,7 @@
       ],
       "order": 3
     },
-      "animate": {
+    "animate": {
       "title": "Enable animations",
       "description": "Animations are costly and eat many CPUs.",
       "type": "boolean",
