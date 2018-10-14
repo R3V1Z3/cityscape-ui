@@ -1,8 +1,8 @@
-
 // Theme config
 // This gets changed from the theme settings
 
 @theme-tabsizing: ~'theme-@{ui-theme-name}-tabsizing';
+@theme-animate: ~'theme-@{ui-theme-name}-animate';
 @theme-dockButtons: ~'theme-@{ui-theme-name}-dock-buttons';
 @theme-stickyHeaders: ~'theme-@{ui-theme-name}-sticky-headers';
 @theme-closeButton: ~'theme-@{ui-theme-name}-tab-close-button';
@@ -77,6 +77,24 @@
 
 }
 
+
+// Animations ------------------------------
+
+[@{theme-animate}="on"] {
+
+  .tool-panel.panel-footer::after {
+  	animation: fglights 5s linear infinite;
+  }
+
+  .tool-panel.panel-footer::before {
+  	animation: bglights 5s linear infinite;
+  }
+
+  .tool-panel.tree-view {
+    animation: scanlines 5s linear infinite;
+  }
+
+}
 
 // Hide docks toggle buttons ------------------------------
 
