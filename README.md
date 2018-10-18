@@ -4,6 +4,8 @@ From your lofty suite overlooking the bustling lights of the city, you take to d
 
 It could happen. Cityscape UI aims to see it happen. It overhauls many of Atom's UI elements and helps you focus on what really matters; itself. It wants your attention on its neon city lights.
 
+[![Cityscape UI](https://img.youtube.com/vi/J43QbmB3NMo/0.jpg)](https://www.youtube.com/watch?v=J43QbmB3NMo)
+
 ## Pretty Neon Lights
 
 > CSS with [Monokai Neon Syntax](https://atom.io/themes/monokai-neon-syntax). File list rendered on adjacent skyscraper.
