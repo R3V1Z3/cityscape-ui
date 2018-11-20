@@ -15,6 +15,9 @@ module.exports =
     atom.config.observe "#{themeName}.animate", (value) ->
       setAnimations(value)
 
+    atom.config.observe "#{themeName}.buildings", (value) ->
+      setBuildings(value)
+
     atom.config.observe "#{themeName}.hideDockButtons", (value) ->
       setHideDockButtons(value)
 
@@ -74,6 +77,17 @@ setAnimations = (animate) ->
 
 unsetAnimations = ->
   root.removeAttribute("theme-#{themeName}-animate")
+
+# Push them buildings back -----------------------
+
+setBuildings = (buildings) ->
+  if buildings
+    root.setAttribute("theme-#{themeName}-buildings", 'on')
+  else
+    unsetBuildings()
+
+unsetBuildings = ->
+  root.removeAttribute("theme-#{themeName}-buildings")
 
 # Dock Buttons -----------------------
 

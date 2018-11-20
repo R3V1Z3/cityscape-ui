@@ -15,7 +15,7 @@ body {
 
 atom-workspace {
 	box-shadow: inset 0 0 20em black;
-	background-color: @ui-fg;//@app-background-color;
+	background-color: @ui-fg;
 }
 
 // magenta overlay
@@ -35,7 +35,7 @@ atom-workspace::after {
 
 // foreground cityscape overlay
 .tool-panel.panel-footer::after {
-  content:"";
+  content: "";
   position: absolute;
   z-index: 0;
   pointer-events: none;
@@ -48,8 +48,8 @@ atom-workspace::after {
   background-repeat: no-repeat;
   background-position: 50% 0%;
   filter: saturate(1) contrast(2) brightness(0.8) blur(4px);
-	animation: none;//fglights 5s linear infinite;
 	opacity: 0.75;
+	animation: none;//fglights 5s linear infinite;
 }
 
 @keyframes fglights {
@@ -82,13 +82,13 @@ atom-workspace[class*="-light"] .tool-panel.panel-footer::after {
   filter: saturate(0) contrast(1.5) brightness(1) blur(1px);
   mix-blend-mode: screen;
 	animation: none;//bglights 5s linear infinite;
-	}
+}
 
-	@keyframes bglights {
-		0% {filter: saturate(0) contrast(1.5) brightness(1) blur(1px);}
-		50% {filter: saturate(1) contrast(1.5) brightness(1) blur(3px);}
-		100% {filter: saturate(0) contrast(1.5) brightness(1) blur(1px);}
-	}
+@keyframes bglights {
+	0% {filter: saturate(0) contrast(1.5) brightness(1) blur(1px);}
+	50% {filter: saturate(1) contrast(1.5) brightness(1) blur(3px);}
+	100% {filter: saturate(0) contrast(1.5) brightness(1) blur(1px);}
+}
 
 // Scrollbars ------------------------------------
 

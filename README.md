@@ -26,6 +26,10 @@ It could happen. Cityscape UI aims to see it happen. It overhauls many of Atom's
 
 Subtle animations can be enabled using the "Enable animations" option in the theme settings. They're turned off by default to avoid CPU usage. Turn on if your CPU is too fast.
 
+## Buildings demand attention
+
+Vibrant neon buildings demand your attention but you can pay them none by toggling the "Push those pesky buildings back" option in theme settings. It's much easier to see your far more brilliant code this way.
+
 ## Credits
 
 * [@Atom One Dark UI Team](https://github.com/atom/one-dark-ui) - core UI design

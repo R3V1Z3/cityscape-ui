@@ -72,18 +72,25 @@
       "default": "false",
       "order": 4
     },
+    "buildings": {
+      "title": "Push those pesky buildings back.",
+      "description": "Them buildings want attention, pay them none.",
+      "type": "boolean",
+      "default": "false",
+      "order": 5
+    },
     "hideDockButtons": {
       "title": "Hide dock toggle buttons",
       "description": "Note: When hiding the toggle buttons, opening a dock needs to be done by using the keyboard or other alternatives.",
       "type": "boolean",
       "default": "false",
-      "order": 5
+      "order": 6
     },
     "stickyHeaders": {
       "title": "Make tree-view project headers sticky",
       "type": "boolean",
       "default": "false",
-      "order": 6
+      "order": 7
     }
   }
 }
