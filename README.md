@@ -1,10 +1,8 @@
-# Cityscape UI
+<a href="https://www.youtube.com/watch?v=J43QbmB3NMo"><img src="https://img.youtube.com/vi/J43QbmB3NMo/0.jpg" width="100%"></a>
 
 From your lofty suite overlooking the bustling lights of the city, you take to decorating the the night sky with your engineering brilliance. Humbled by the loftier tower of suites dominating your view, you seize the opportunity to use their ad display service to render your local file listing.
 
 It could happen. Cityscape UI aims to see it happen. It overhauls many of Atom's UI elements and helps you focus on what really matters; itself. It wants your attention on its neon city lights.
-
-[![Cityscape UI](https://img.youtube.com/vi/J43QbmB3NMo/0.jpg)](https://www.youtube.com/watch?v=J43QbmB3NMo)
 
 ## Pretty Neon Lights
 
